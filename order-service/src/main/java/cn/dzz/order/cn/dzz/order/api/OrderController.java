@@ -30,6 +30,7 @@ public class OrderController {
     public String getStockBalance() {
 
         // 当Service在Nacos中注册多个时，此时会应用上负载均衡，默认的负载均衡策略是轮询
+        // 可以在配置文件中配置权重，负载均衡不是Nacos实现的，而是通过Spring Cloud中的Ribbon或者LoadBalancer实现的
         ResponseEntity<String> forEntity = restTemplate.getForEntity("http://stock-service/stock/port", String.class);
 
         return forEntity.getBody();
