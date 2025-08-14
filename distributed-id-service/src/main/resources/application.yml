@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: distributed-id
+  redis:
+    host: 43.138.6.12
+    port: 6739
+    database: 0
+    password: Dzz996122

@@ -19,6 +19,8 @@
     <modules>
         <module>order-service</module>
         <module>stock-service</module>
+        <module>sentinel-demo-service</module>
+        <module>distributed-id-service</module>
     </modules>
 
     <properties>
